@@ -43,10 +43,12 @@ Sign in with `POST /api/auth/login` using `{ "identifier": "teacher1", "password
 
 ## Deploy on Vercel
 
-Use the Next.js framework preset with this repository as the project root. Set `MONGODB_URI`, `MONGODB_DB`, `JWT_SECRET`, and `FRONTEND_URL` in Vercel project settings. `FRONTEND_URL` must be the exact frontend origin without a trailing slash. Run `npm run seed` locally against the deployed Atlas database before testing.
+Use the Next.js framework preset with this repository as the project root. Set `MONGODB_URI`, `MONGODB_DB`, `JWT_SECRET`, and `FRONTEND_URL` in Vercel project settings. `FRONTEND_URL` accepts the frontend origin without a trailing slash (or comma-separated allowed origins). Run `npm run seed` locally against the deployed Atlas database before testing.
 
 Frontend source: https://github.com/NyanCodes/coursecraft-frontend
 
 Live API: https://coursecraft-backend-two.vercel.app
 
 Live frontend: https://coursecraft-frontend-beta.vercel.app
+
+Changes pushed to `main` trigger a new Vercel deployment automatically.
